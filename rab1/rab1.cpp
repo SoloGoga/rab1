@@ -1,4 +1,3 @@
-﻿
 #include "pch.h"
 #include <iostream>
 #include "string.h" //библиотека для функций над строками
@@ -38,7 +37,6 @@ int main()
 
 	for (i = 0; i < n; i++)
 	{
-
 		cout << "input the surname of the " << i + 1 << " student:";
 		cin >> vuz[i].fullname.surname;
 		cout << "input the name of the " << i + 1 << " student:";
@@ -51,9 +49,8 @@ int main()
 		cin >> vuz[i].date.month;
 		cout << "input the day of enter to university of the " << i + 1 << " student:";
 		cin >> vuz[i].date.day;
-		while (((vuz[i].date.year > 2018) || (vuz[i].date.year < 1950)) & ((vuz[i].date.month > 12) || (vuz[i].date.month < 1)) & ((vuz[i].date.day > 31) || (vuz[i].date.day < 1)))
+		while (((vuz[i].date.year > 2018) || (vuz[i].date.year < 1950)) && ((vuz[i].date.month > 12) || (vuz[i].date.month < 1)) && ((vuz[i].date.day > 31) || (vuz[i].date.day < 1)))
 		{
-			
 			if ((vuz[i].date.year > 2018) || (vuz[i].date.year < 1950))
 			{
 				cout << "Not right significance of the year. Please try again." << endl;
@@ -70,7 +67,6 @@ int main()
 				cin >> vuz[i].date.day;
 			}
 		}
-	        system("cls");
 		cout << "input the group of the " << i + 1 << " student:";
 		cin >> vuz[i].group;
 		cout << "input the name of the faculty of the " << i + 1 << " student:";
@@ -114,3 +110,4 @@ int main()
 
 
 }
+return 0;
