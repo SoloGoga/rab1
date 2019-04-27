@@ -49,7 +49,7 @@ int main()
 		cin >> vuz[i].date.month;
 		cout << "input the day of enter to university of the " << i + 1 << " student:";
 		cin >> vuz[i].date.day;
-		while (((vuz[i].date.year > 2018) || (vuz[i].date.year < 1950)) && ((vuz[i].date.month > 12) || (vuz[i].date.month < 1)) && ((vuz[i].date.day > 31) || (vuz[i].date.day < 1)))
+		while (((vuz[i].date.year > 2018) || (vuz[i].date.year < 1950)) || ((vuz[i].date.month > 12) || (vuz[i].date.month < 1)) || ((vuz[i].date.day > 31) || (vuz[i].date.day < 1)))
 		{
 			if ((vuz[i].date.year > 2018) || (vuz[i].date.year < 1950))
 			{
